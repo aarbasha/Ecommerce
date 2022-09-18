@@ -1,0 +1,14 @@
+.content-user {
+  position: relative;
+  top: 100px;
+}
+
+.content-auth {
+  position: relative;
+  top: -30px;
+}
+
+.content-auth-singup {
+  position: relative;
+  top: -30px;
+}
