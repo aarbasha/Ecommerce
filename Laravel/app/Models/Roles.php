@@ -16,12 +16,12 @@ class Roles extends Model
         'name', 'number', 'cover'
     ];
 
-    // protected $with = ['users'];
+    protected $with = ['users'];
 
-    // public function users()
-    // {
-    //     return $this->belongsTo(User::class, 'user_id', 'id');
-    // }
+    public function users()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 
 
     public function Permissions()

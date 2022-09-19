@@ -40,13 +40,34 @@ const Add_Roles = () => {
         const value = e.target.checked
         setChecked((values) => ({ ...values, [name]: value }))
 
+    }
 
+
+    const upToServer = (e) => {
+        e.preventDefault();
+
+        const formdata = new FormData();
+        //Roles
+        formdata.append('name', inputs.name)
+        formdata.append('number', inputs.number)
+        formdata.append('cover', cover)
+        //Permissions
+        formdata.append('addCategories', Checked.addCategories)
+        formdata.append('addProducts', Checked.addProducts)
+        formdata.append('deleteCategories', Checked.deleteCategories)
+        formdata.append('deleteProducts', Checked.deleteProducts)
+        formdata.append('editCategories', Checked.editCategories)
+        formdata.append('editProducts', Checked.editProducts)
+        formdata.append('showCategories', Checked.showCategories)
+        formdata.append('showProducts', Checked.showProducts)
+
+        console.log(formdata);
     }
     return (
         <GlobalAnimation>
             <div className="card">
                 <div className="card-body">
-                    <form encType="multipart/form-data">
+                    <form onSubmit={upToServer} encType="multipart/form-data">
                         <div className="row">
                             <div className="col-6 my-1">
                                 <label className="form-label"> Name Roles</label>
@@ -761,7 +782,7 @@ const Add_Roles = () => {
                             <hr className="my-2" />
 
                             <div className="col-12">
-                                <button className="btn btn-lg btn-primary mx-3"> Save Roles </button>
+                                <button type="submit" className="btn btn-lg btn-primary mx-3"> Save Roles </button>
 
                                 <button className="btn btn-lg btn-danger mx-3"> Back</button>
                             </div>
