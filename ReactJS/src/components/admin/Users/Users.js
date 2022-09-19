@@ -196,13 +196,13 @@ const Users = () => {
                                                     {inputs.rouls == 0 ? (
                                                         <>
                                                             <Link
-                                                                to={"/admin/users/Users_Profiles/" + user.id}
+                                                                to={"/admin/users/users_profiles/" + user.id}
                                                                 className="text-primary btn"
                                                             >
                                                                 <i className="bi bi-eye-fill" />
                                                             </Link>
                                                             <Link
-                                                                to={"/admin/users/Edit_Users/" + user.id}
+                                                                to={"/admin/users/edit_users/" + user.id}
                                                                 className="text-warning btn"
                                                             >
                                                                 <i className="bi bi-pencil-fill" />
@@ -220,7 +220,7 @@ const Users = () => {
                                                     ) : inputs.rouls == 1 ? (
                                                         <>
                                                             <Link
-                                                                to={"/admin/users/Users_Profiles/" + user.id}
+                                                                to={"/admin/users/users_profiles/" + user.id}
                                                                 className="text-primary"
                                                             >
                                                                 <i className="bi bi-eye-fill" />
@@ -228,7 +228,7 @@ const Users = () => {
 
                                                             {user.rouls >= 1 ?
                                                                 <Link
-                                                                    to={"/admin/users/Edit_Users/" + user.id}
+                                                                    to={"/admin/users/edit_users/" + user.id}
                                                                     className="text-warning"
                                                                 >
                                                                     <i className="bi bi-pencil-fill" />
@@ -237,7 +237,7 @@ const Users = () => {
                                                     ) : (
                                                         <>
                                                             <Link
-                                                                to={"/admin/users/Users_Profiles/" + user.id}
+                                                                to={"/admin/users/users_profiles/" + user.id}
                                                                 className="text-primary"
                                                             >
                                                                 <i className="bi bi-eye-fill" />

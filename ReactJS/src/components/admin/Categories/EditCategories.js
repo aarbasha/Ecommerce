@@ -65,7 +65,7 @@ const EditCategories = () => {
 
       setTimeout(() => {
         if (res.status === 200) {
-          Rediract("/admin/Categories/All_Categories");
+          Rediract("/admin/categories/all_categories");
           toast.success(' تم التحديث بنجاح', {
             position: "bottom-right",
             autoClose: 3000,

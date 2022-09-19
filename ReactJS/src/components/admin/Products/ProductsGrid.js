@@ -85,7 +85,7 @@ const ProductsGrid = () => {
               {prodacts.map((item) => (
                 <div className="col ">
                   <div className="card border card-prodact shadow-none mb-0">
-                    <Link to={`/admin/Products/Single_Products/${item.id}`}>
+                    <Link to={`/admin/products/single_products/${item.id}`}>
                       <div className="card-body text-center">
                         <img
                           src={`http://localhost:8000/cover/${item.cover}`}
@@ -108,7 +108,7 @@ const ProductsGrid = () => {
                         <small>74 Reviews</small>
                         <div className="actions d-flex align-items-center justify-content-center gap-2 mt-3">
                           <Link
-                            to={`/admin/Products/Edit_Products/${item.id}`}
+                            to={`/admin/products/edit_products/${item.id}`}
                             className="btn btn-sm btn-outline-primary"
                           >
                             <i className="bi bi-pencil-fill" /> Edit

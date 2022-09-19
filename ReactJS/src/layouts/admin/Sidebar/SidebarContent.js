@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import { MdSecurity } from "react-icons/md"
+import { HiUserGroup, HiUsers } from "react-icons/hi"
+
 
 const SidebarContent = () => {
-
-
     return (
         <>
             <div className="tab-content">
@@ -17,11 +17,20 @@ const SidebarContent = () => {
                             </div>
                             <small className="mb-0">Some placeholder content</small>
                         </div>
-                        <NavLink to="/admin/index" className="list-group-item"><i className="bi bi-cart-plus" />e-Commerce</NavLink>
-                        <NavLink to="/admin/app" className="list-group-item"><i className="bi bi-wallet" />Sales</NavLink>
-                        <NavLink to="/admin/app2" className="list-group-item"><i className="bi bi-bar-chart-line" />Analytics</NavLink>
-                        <NavLink to="/admin/app3" className="list-group-item"><i className="bi bi-archive" />Project Management</NavLink>
-                        <NavLink to="/admin/ds" className="list-group-item"><i className="bi bi-cast" />CMS Dashboard</NavLink>
+                        <NavLink to="/admin/index" className="list-group-item"><i className="bi bi-cart-plus" />
+                            e-Commerce
+                        </NavLink>
+                        <NavLink to="/admin/app" className="list-group-item"><i className="bi bi-wallet" />
+                            Sales
+                        </NavLink>
+                        <NavLink to="/admin/app2" className="list-group-item"><i className="bi bi-bar-chart-line" />
+                            Analytics
+                        </NavLink>
+                        <NavLink to="/admin/app3" className="list-group-item"><i className="bi bi-archive" />
+                            Project Management
+                        </NavLink>
+                        <NavLink to="/admin/ds" className="list-group-item"><i className="bi bi-cast" />CMS Dashboard
+                        </NavLink>
                     </div>
                 </div>
 
@@ -34,11 +43,11 @@ const SidebarContent = () => {
                             <small className="mb-0">Some placeholder content</small>
                         </div>
 
-                        <NavLink to="/admin/Categories/All_Categories" className="list-group-item"><i className="bi bi-envelope" />
+                        <NavLink to="/admin/categories/all_categories" className="list-group-item"><i className="bi bi-envelope" />
                             Categories
                         </NavLink>
 
-                        <NavLink to="/admin/Products/All_Products" className="list-group-item"><i className="bi bi-chat-left-text" />
+                        <NavLink to="/admin/products/all_products" className="list-group-item"><i className="bi bi-chat-left-text" />
                             Products
                         </NavLink>
 
@@ -70,13 +79,18 @@ const SidebarContent = () => {
                             <small className="mb-0">Some placeholder content</small>
                         </div>
 
-                        <NavLink to="/admin/Users/All_Users" className="list-group-item">
-                            <i className="bi bi-people-fill" /> Users</NavLink>
+                        <NavLink to="/admin/roles/all_roles" className="list-group-item">
+                            <HiUserGroup /><span className='mx-3'>Roles</span>
+                        </NavLink>
 
-                        <NavLink to="#" className="list-group-item">
-                            <MdSecurity /><span className='mx-3'>Permissions</span></NavLink>
-                        <NavLink to="#" className="list-group-item">
-                            <MdSecurity /><span className='mx-3'>Rouls</span></NavLink>
+                        <NavLink to="/admin/permissions/all_Permissions" className="list-group-item">
+                            <MdSecurity /><span className='mx-3'>Permissions</span>
+                        </NavLink>
+
+                        <NavLink to="/admin/Users/all_Users" className="list-group-item">
+                            <HiUsers className='' /> <span className='mx-3'>Users</span>
+                        </NavLink>
+
                     </div>
                 </div>
             </div>

@@ -74,7 +74,7 @@ const Edit_Users = () => {
 
       setTimeout(() => {
         if (res.data.status === 200) {
-          Rediract("/admin/Users/All_Users");
+          Rediract("/admin/users/all_users");
           toast.success(" تم التحديث بنجاح", {
             position: "bottom-right",
             autoClose: 3000,

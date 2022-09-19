@@ -39,9 +39,9 @@ const MasterCategories = () => {
                     </div>
                     <div className="ms-auto">
 
-                        <NavLink to={'/admin/Categories/All_Categories'} type="button" className="btn btn-dark mx-2">All Categories</NavLink>
+                        <NavLink to={'/admin/categories/all_categories'} type="button" className="btn btn-dark mx-2">All Categories</NavLink>
 
-                        <NavLink to={'/admin/Categories/Add_Categories'} type="button" className="btn btn-primary mx-2">Add Categories</NavLink>
+                        <NavLink to={'/admin/categories/add_categories'} type="button" className="btn btn-primary mx-2">Add Categories</NavLink>
 
                         <div className="d-flex flex-row-reverse">
                             <button className='btn btn-danger m-3' onClick={() => Rediract(-1)}>Back</button>

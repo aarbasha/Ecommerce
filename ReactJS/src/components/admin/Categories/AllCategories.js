@@ -126,7 +126,7 @@ const AllCategories = () => {
                     <td>
                       <div className="d-flex justify-content-center align-items-center gap-3 fs-6">
                         <Link
-                          to={`/admin/Categories/ProductsGrid/${c.id}`}
+                          to={`/admin/categories/productsGrid/${c.id}`}
                           className="text-primary btn"
                           data-bs-toggle="tooltip"
                           data-bs-placement="bottom"
@@ -136,7 +136,7 @@ const AllCategories = () => {
                           <i className="bi bi-eye-fill" />
                         </Link>
                         <Link
-                          to={`/admin/Categories/Edit_Categories/${c.id}`}
+                          to={`/admin/categories/edit_categories/${c.id}`}
                           className="text-warning btn"
                         >
                           <i className="bi bi-pencil-fill" />

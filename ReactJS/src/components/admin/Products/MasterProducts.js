@@ -51,7 +51,7 @@ const MasterProducts = () => {
 
 
             <NavLink
-              to={"/admin/Products/All_Products"}
+              to={"/admin/products/all_products"}
               type="button"
               className="btn btn-dark mx-2"
             >
@@ -61,7 +61,7 @@ const MasterProducts = () => {
 
             <button disabled={categories?.length === 0} className={'btn btn-primary mx-2'}>
               <NavLink
-                to={"/admin/Products/Add_Products"}
+                to={"/admin/products/add_products"}
                 className="text-white"
               >
                 Add Products

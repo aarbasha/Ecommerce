@@ -54,7 +54,7 @@ const Add_Users = () => {
         https.post("/add-user", formData).then((res) => {
             setTimeout(() => {
                 if (res.data.status === 200) {
-                    Rediract("/admin/Users/All_Users");
+                    Rediract("/admin/users/all_users");
                     toast.success(" تم الاضافة بنجاح", {
                         position: "bottom-right",
                         autoClose: 3000,

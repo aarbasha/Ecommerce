@@ -34,7 +34,7 @@ const Users_Profiles = () => {
     // فانكشن الخاصة بلرفع
     const submitForm = () => {
         https.post('Users/Users_Profiles/' + id + '/update', inputs).then((res) => {
-            rediract("/admin/Users/All_Users");
+            rediract("/admin/users/all_users");
         });
     };
 

@@ -107,7 +107,7 @@ const AddProducts = () => {
     }).then((res) => {
       setTimeout(() => {
         if (res.data.status === 200) {
-          Rediract("/admin/Products/All_Products");
+          Rediract("/admin/products/all_Products");
           toast.success(" تم الاضافةالمنتج بنجاح", {
             position: "bottom-right",
             autoClose: 3000,

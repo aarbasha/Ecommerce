@@ -45,7 +45,7 @@ const AddCategories = () => {
       setTimeout(() => {
         if (res.data.status === 200) {
           console.log(res);
-          Rediract("/admin/Categories/All_Categories");
+          Rediract("/admin/categories/all_categories");
           toast.success(" تم الاضافة بنجاح", {
             position: "bottom-right",
             autoClose: 3000,

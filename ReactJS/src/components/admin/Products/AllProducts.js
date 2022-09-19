@@ -56,7 +56,7 @@ const AllProducts = () => {
     const deleteProdact = async (id) => {
         console.log(id);
         await https.post(`/product/${id}`).then(res => {
-            Rediract('/admin/Products/All_Products')
+            Rediract('/admin/products/all_products')
             getAllproducts();
             toast.error(" تم الحذف  بنجاح", {
                 position: "bottom-right",
@@ -159,7 +159,7 @@ const AllProducts = () => {
                                             <td>
                                                 <div className="d-flex align-items-center gap-3 fs-6">
                                                     <Link
-                                                        to={"/admin/Products/Single_Products/" + item.id}
+                                                        to={"/admin/products/single_products/" + item.id}
                                                         className="text-primary btn"
                                                         data-bs-toggle="tooltip"
                                                         data-bs-placement="bottom"
@@ -169,7 +169,7 @@ const AllProducts = () => {
                                                         <i className="bi bi-eye-fill" />
                                                     </Link>
                                                     <Link
-                                                        to={"/admin/Products/Edit_Products/" + item.id}
+                                                        to={"/admin/products/edit_products/" + item.id}
                                                         className="text-warning btn"
                                                         data-bs-toggle="tooltip"
                                                         data-bs-placement="bottom"

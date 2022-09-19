@@ -33,9 +33,9 @@ const MasterUsers = () => {
                     </div>
                     <div className="ms-auto">
 
-                        <NavLink to={'/admin/Users/All_Users'} type="button" className="btn btn-dark mx-2">All User</NavLink>
+                        <NavLink to={'/admin/users/all_users'} type="button" className="btn btn-dark mx-2">All User</NavLink>
 
-                        <NavLink to={'/admin/Users/Add_Users'} type="button" className="btn btn-primary mx-2">Add User</NavLink>
+                        <NavLink to={'/admin/users/add_users'} type="button" className="btn btn-primary mx-2">Add User</NavLink>
 
 
                     </div>
