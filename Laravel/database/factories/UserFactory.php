@@ -20,6 +20,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'username' => fake()->userName(),
+            // 'role_id' => fake()->id(),
             // 'phone' => fake()->phoneNumber(),
             // 'avatar' => fake()->image('public/photos/', 400, 300),
             'email' => fake()->safeEmail(),
